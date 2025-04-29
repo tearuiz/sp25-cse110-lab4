@@ -1,1 +1,18 @@
-
+# Answers
+1. Line 12 will print 3 as the variable `i` is declared under `var`, so its value can be accessed within the scope of the function. 
+2. Line 13 will print 150 as the variable `discountedPrice` is declared under `var` so its value can be accessed within the scope of the function. Since it is outside the for-loop, the most recent value in the variable gets printed. 
+3. Line 14 wil print 150 as well because `finalPrice` is declared with `var` so it is function scoped. 
+4. The function will return `[50,100,150]` as it has each value calculated for `finalPrice` pushed to it. This variable is also `var` and can have its value accessed anywhere in the function. 
+5. Line 12 will result in a `ReferrenceError` because the variable `i` is declared using `let`, which causes the variable to be block scoped. The command in line 12 attempts to access `i` outside of the block that variable is declared in. 
+6. Line 13 will also result in a `ReferenceError`, attempts to access `discountedPrice` outside of the block it is declared in. 
+7. Line 14 will print 150 because `finalPrice` is declared outside of the for loop so the command in line 14 is able to access the variable's value.
+8. The function will still return `[50,100,150]` as `discounted` is also defined within the same block as the return function. 
+9. Line 11 results in a `ReferenceError` because the variable `i` is declared using `let`, which causes the variable to be block scoped. The command in line 11 attempts to access `i` outside of the block that variable is declared in. 
+10. Line 12 will print 3 because the value of length takes in the length of the prices array, which is 3 in this case. Since we do not try to change the variable's value, no error is given. 
+11. This function will print `[50,100,150]` because the `const` still allows the array contents to be mutable, but not its reference. 
+12. a) `student.name` b)`student["Grad Year"]` c)`student.greeting()` d)`student["Favorite Teacher"].name` e)`student.courseLoad[0]`
+13. a) `'32'` because the 2 takes on the string quality from '3' b)`1` because the string 3 becomes an integer with subtraction c) `3` because null becomes 0 d) `'3null'` because null is turned into a string with the addition e) `4` because `true` becomes 1 under addition f) `0` because false and null both equal 0 g) `'3undefined'` because `undefined` takes on string qualities under addition  h) `NaN`, 3 becomes an integer under subtraction and undefined becomes `NaN` so we get `NaN` 
+14. a) `true` because the string 2 becomes an integer under `>` b) `false` because this is a string comparison, 2 is greater that 1 c) `true`, string is changed to integer under non-strict equality d) `false`, strict equality so the string cannot be the same as the integer e) `false`, the integer value of `true` is 1 and 1!=2 f) `true` because Boolean(2) is true so true === true. 
+15. The difference between `==` and `===` is that `==` performs type coercion, meaning one variable's type can be changed so that it is comparable to the other variable. The `===` does not perform type coercion and is stricter as it compares value and type. 
+17. ANSWER
+19. ANSWER
